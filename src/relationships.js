@@ -21,10 +21,4 @@ module.exports = function(bookshelf) {
 
     return model;
   };
-
-  bookshelf.Model.related = function(name) {
-    return this.relations[name] ||
-    (this.relationships[name] ? this.relations[name] =
-      this.relationships[name]() : void 0);
-  };
 };

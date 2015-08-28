@@ -1,6 +1,6 @@
 {
   "name": "bookshelf-relationships",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A bookshelf plugin to list out relationships",
   "main": "src/relationships.js",
   "scripts": {
