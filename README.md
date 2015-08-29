@@ -1,8 +1,23 @@
 # bookshelf-relationships
 
-Bookshelf currently doesn't have a way to list relationships. If you add this
-plug-in into bookshelf you can add you relationship functions to a relationships
-object like so:
+Bookshelf currently doesn't have a way to list relationships.
+
+## Install
+```bash
+npm install bookshelf-relationships --save
+```
+
+Then add this to where you are building your bookshelf object:
+```javascript
+var bookshelf = require('bookshelf')(knex);
+bookshelf.plugin(require('bookshelf-relationships'));
+```
+
+## Usage
+
+Now you can add you relationship functions to a relationships like below. They
+will also get added to the model directly so don't worry all code and plug-ins
+will still work.
 
 ```javascript
 var Post = bookshelf.Model.extend({
